@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "playwright": "^1.29.1"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^7.3.1",
+    "@cucumber/pretty-formatter": "^1.0.0",
+    "@playwright/test": "^1.29.1"
+  },
+  "scripts": {
+    "test:e2e": "cucumber-js --require cucumber.conf.js --require tests/acceptance/stepDefinitions/**/*.js --format @cucumber/pretty-formatter"
+  }
+}
