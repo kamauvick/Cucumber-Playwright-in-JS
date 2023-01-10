@@ -9,7 +9,7 @@ class Greeter {
     }
 
     sayHi(){
-        return "Hi, i'm runnig the tests";
+        return "Hi, i'm running the tests";
     }
 }
 

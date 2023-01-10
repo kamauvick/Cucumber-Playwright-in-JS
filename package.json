@@ -1,5 +1,8 @@
 {
   "dependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "jmespath": "^0.16.0",
+    "node-fetch": "^2.6.1",
     "playwright": "^1.29.1"
   },
   "devDependencies": {
