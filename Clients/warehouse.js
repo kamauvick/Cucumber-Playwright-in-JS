@@ -1,14 +1,13 @@
 const {request, expect} = require('@playwright/test');
 const jmespath = require('jmespath')
 
+const warehouseQueries  = require('../Queries/warehouseQueries')
+
 //URLS
 let BASE_URL = 'http://localhost:8081/graphql';
 
 //Variables
 let data;
-
-//Queries
-const allWarehousesQuery = "{ warehouses { id, name, Territory } }"
 
 class GraphQLService {
     async setUp(){
@@ -21,7 +20,7 @@ class GraphQLService {
 
         const warehouseResponse = await context.post(BASE_URL, {
             data: {
-                query: allWarehousesQuery,
+                query: warehouseQueries.allWarehouses,
             }
         });
 
