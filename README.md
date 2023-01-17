@@ -25,7 +25,10 @@ git clone https://github.com/kamauvick/Cucumber-Playwright-in-JS.git
 npm install
 ```
 - Have the server running at the provided ```BASE_URL```
-
+- Run the tests
+```javascript
+npm run test:e2e ./tests 
+```
 ## What's included
 
 Some text
