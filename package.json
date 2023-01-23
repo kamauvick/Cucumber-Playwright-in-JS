@@ -11,6 +11,6 @@
     "@playwright/test": "^1.29.1"
   },
   "scripts": {
-    "test:e2e": "cucumber-js --require cucumber.conf.js --require tests/acceptance/stepDefinitions/**/*.js --format @cucumber/pretty-formatter"
+    "test:e2e": "cucumber-js --require cucumber.conf.js --require tests/**/stepDefinitions/*.js --format @cucumber/pretty-formatter"
   }
 }
